@@ -1,0 +1,153 @@
+body {
+    max-width: 700px;
+    margin: 0 auto;
+    background: url("https://th.bing.com/th/id/OIP.pGq5lT0RuUqDG4dI3ir4ngHaEK?pid=ImgDet&rs=1");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header settings */
+
+header {
+    font-size: 25px;
+}
+
+img {
+    border-radius: 200px;
+    margin-top: 10px;
+    border: 7px solid green;
+    border-style: ridge;
+    height: 250px;
+}
+
+ul {
+    padding: 6px 5px;
+    list-style: none;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+li {
+    display: inline;
+    padding: 15px;
+    margin: 30px;
+}
+
+/* Body settings */
+
+input {
+    border-color: red;
+    border-radius: 10px;
+    height: 25px;
+    padding: 1px, 8px; /* how to manage this? */
+    font-size: 12px;
+}
+
+.menuLink {
+    color: rgb(177, 177, 177);
+}
+
+#submit {                  /* or input[type="submit"] */
+    color: white;
+    background: rgb(3, 140, 3);
+    border-radius: 10px;
+}
+
+#subscribe {
+    margin: 0px, 0px, 20px, 0px;
+    padding: 0px, 0px, 20px, 0px;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
+
+/* capabilities webpage settings */
+
+.dot {
+    font-size: 1ch;
+    line-height: 1px;
+}
+
+.h2capabilities {
+    display: inline;
+}
+
+/* PROJECTS webpage settings - BLOCK display */
+
+.testPositioning {
+    height: 270px;
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+#cyberDiv {
+    background-image: url("./resources/cyberSecurity.jpg");
+}
+#sustainaDiv {
+    background-image: url("./resources/sustainableTech.jpg");
+}
+.imgParagraph {
+    text-align: justify;
+    line-height: 20px;
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5)); /* need to add vendor prefixes */
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    border-radius: 2px;
+}
+
+/* PROECTS SideBySide settings - inline display*/
+
+.testPositioning2 {
+    height: 400px;
+    max-width: 45%;
+    margin: 0 10px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.imgParagraph2 {
+    text-align: justify;
+    line-height: 20px;
+    background-color: rgba(0,0,0,0.8);
+    position: relative;
+    bottom: 0px; /* why is this not working?! */
+    margin: 0;
+    border-radius: 2px;
+}
+
+/* FOOTER SETTINGS */
+
+footer {
+    text-align: right;
+    font-size: xx-small;
+    color:rgb(127, 127, 112);
+    padding: 11px;
+}
+
+/* REPONSIVE DESIGN SETTINGS */
+
+@media(max-width: 700px) {
+    h1 {
+        margin: 5px,5px,1px,5px;
+        padding: 0px
+    }
+    li {
+       display: block;
+       padding: 4px;
+       margin: 5px;
+       font-size: 20px;
+    }
+}
